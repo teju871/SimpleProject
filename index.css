@@ -1,0 +1,87 @@
+
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+}
+
+fieldset {
+border: 1px solid #ddd;
+padding: 20px;
+border-radius: 8px;
+}
+
+.container {
+width: 50%;
+float: left;
+}
+
+.right-section {
+width: 48%;
+float: right;
+box-sizing: border-box;
+}
+
+label, select,input {
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+width: 30%;
+margin-bottom: 30px;
+}
+
+
+
+.ft{
+justify-content: left;
+display: flex;
+
+}
+
+.ft1{
+justify-content: left;
+display: flex;
+
+}
+
+textarea {
+width: 60%;
+height: 400px;
+
+/* resize: vertical; */
+margin-bottom: 16px;
+}
+.sizndcolor{
+display: flex;
+justify-content: space-between;
+}
+.sizndcolor1{
+display: flex;
+justify-content: space-between;
+}
+
+button {
+width: 20%;
+margin-bottom: 20px;
+display: block;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+justify-content: space-around;
+float: left;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+#output {
+
+
+margin-bottom: 30px;
+border: 2px solid #ddd;
+padding: 60px;
+white-space: pre-wrap;
+
+}
+

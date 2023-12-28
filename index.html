@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor Form</title>
+ <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <fieldset>  
+    <div class="container">
+      <label for="textInput">Enter Text</label>
+      <br>
+      <textarea id="textInput" name="textInput" placeholder="New Text" ></textarea>
+    
+    </div>
+      <div class="right-section">
+        <div class="ft">
+      <label for="fontSelect">Font</label>
+    </div>
+    <div class="ft1">
+      <select id="fontSelect" name="fontSelect">
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="Times New Roman, serif">Times New Roman</option>
+          <option value="Courier New, monospace">Courier New</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="'Roboto', sans-serif">Roboto</option>
+          <option value="'Lora', serif">Lora</option>
+          <option value="'Open Sans', sans-serif">Open Sans</option>
+          <option value="'Montserrat', sans-serif">Montserrat</option>
+          <option value="'Poppins', sans-serif">Poppins</option>
+          <!-- Add more fonts as needed -->
+      </select>
+    </div>
+           <div class="sizndcolor">
+      <label for="fontSize">Size</label>
+      <!-- <input type="number" id="fontSize" name="fontSize" value="16" min="1"> -->
+      <label for="colorInput">Color</label>
+      <!-- <input type="color" id="colorInput" name="colorInput" value="#000000"> -->
+    </div>
+    <div class="sizndcolor1">
+      <input type="number" id="fontSize" name="fontSize" value="16" min="1">
+      <input type="color" id="colorInput" name="colorInput" value="#000000">
+    </div>
+
+      <button type="button" onclick="addText()">ADD TEXT</button>
+ 
+    
+  </div>
+  <!-- <button class="bt" type="button" onclick="addText()">ADD TEXT</button> -->
+  
+ 
+    </fieldset>
+    <div id="output"></div>
+
+    <script>
+        function addText() {
+            var textInput = document.getElementById('textInput').value;
+            var fontSelect = document.getElementById('fontSelect').value;
+            var colorInput = document.getElementById('colorInput').value;
+            var fontSize = document.getElementById('fontSize').value;
+
+            var outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '<p style="font-family: ' + fontSelect + '; color: ' + colorInput + '; font-size: ' + fontSize + 'px;">' + textInput + '</p>';
+        }
+    </script>
+
+</body>
+</html>
